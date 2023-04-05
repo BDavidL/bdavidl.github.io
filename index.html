@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href=""><img src="img/D1.png" alt="Logo de DAVID"></a>            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/David1.png" alt="">
+            </div>
+            <h1>DAVID LÓPEZ</h1>
+            <h2>INGENIERO EN MULTIMEDIA</h2>
+            <div class="redes">
+                <a href="mailto:lopezcastellanosb6@gmail.com?subject=Asunto del correo electrónico"><i class="fa fa-envelope-open"></i></a>
+                <a href="https://www.linkedin.com/in/david1711/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=3008987745"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Brayan David</span> dinámico, creativo y apasionado por el mundo de la tecnología y el diseño multimedia. Con amplia experiencia en roles importantes de la programación y el desarrollo web, he podido adquirir un sólido conocimiento en herramientas y técnicas de animación 3D, lo que me ha permitido ser muy versátil y eficiente en la gestión de proyectos digitales multimedia. A lo largo de mi carrera, he desarrollado habilidades en programas de edición y diseño de interfaces, lo que me ha permitido crear proyectos multimedia altamente estéticos y funcionales. Además, cuento con un amplio dominio en lenguajes de programación y metodologías de desarrollo ágiles, lo que me permite ser muy efectivo en la gestión de proyectos y el trabajo en equipo. Mi enfoque está en diseñar, implementar y gestionar procesos, técnicas y sistemas para el desarrollo de proyectos digitales multimedia en las áreas de videojuegos y aplicaciones multimedia. Soy un profesional comprometido con la calidad, la eficiencia y la innovación, y estoy siempre en búsqueda de nuevos desafíos y oportunidades de crecimiento.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            03-05-2001
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +57 3008987745
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            lopezcastellanosb6@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.example.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Cajica-  Cundinamarca
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Desarrollador Web</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fab fa-js-square"></i>
+                            <span>JS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fas fa-palette"></i>
+                            <span>DIBUJO</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fas fa-desktop"></i>
+                            <span>TIC</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a href="https://drive.google.com/file/d/1EIe7Kn_D-yBff-3FLvG4_8VLFie0c7N0/view?usp=sharing" target="_blank" style="text-decoration: none; color: white;">
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+         </a>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Autodesk Maya</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Paquete ADOBE</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Base de datos</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Bachiller académico</h4>
+                        <span class="casa">ESCUELA NORMAL SUPERIOR SOR JOSEFA 
+                            DEL CASTILLO Y GUEVARA</span>
+                        <span class="fecha">2012 - 2018</span>
+                        <p>Soy bachiller académico con énfasis en pedagogía, lo que me ha permitido adquirir conocimientos y habilidades en áreas como la didáctica, la psicología educativa y la pedagogía social. Estos conocimientos me han permitido comprender la importancia de la educación y el impacto que tiene en la formación de los individuos y en la sociedad en general.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingenieria en Multimedia</h4>
+                        <span class="casa">UNIVERSIDAD MILITAR NUEVA GRANADA
+                            (SEDE CAMPÚS - CAJICA)</span>
+                        <span class="fecha">2018 - 2023</span>
+                        <p>Soy estudiante de ingeniería en multimedia y actualmente me encuentro cursando el décimo semestre de mi carrera. Durante mis estudios, he adquirido conocimientos y habilidades en áreas como diseño gráfico, animación, programación, edición de video y audio, entre otros. Además, he trabajado en proyectos multidisciplinarios, lo que me ha permitido desarrollar habilidades para trabajar en equipo y adaptarme a diferentes roles y tareas.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Diseñador Grafico</h4>
+                        <span class="casa">TRABAJO PUBLICITARIO
+                            DISEÑO - LOGO</span>
+                        <span class="fecha">2019</span>
+                        <p>Diseño de un logo para una fundación de acompañamiento a jóvenes. El objetivo era crear una identidad visual que representara los valores y objetivos de la organización, basándome en una investigación detallada de su visión, misión y público objetivo. El diseño representa la idea de un camino hacia el éxito, con elementos que simbolizan el crecimiento personal y la comunidad. El resultado final fue un logo moderno y atractivo, que puede ser utilizado en diferentes medios de comunicación.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Proyect Manager</h4>
+                        <span class="casa">ALCALDIA DE CAJICÁ</span>
+                        <span class="fecha">2022</span>
+                        <p>Desarrollo  de un videojuego educativo enfocado en la seguridad vial del municipio de Cajicá, utilizando el motor de desarrollo Unity y el programa de desarrollo gráfico 3D Autodesk Maya. El objetivo principal del juego era educar a los niños sobre las normas de tránsito y la importancia de respetarlas para evitar accidentes. A través de situaciones de tráfico interactivas, mini juegos, premios y desafíos, los niños podían aprender de manera lúdica y entretenida. El diseño del juego fue amigable y colorido para atraer la atención de los niños y mantenerlos comprometidos con la temática del juego.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>DISEÑOS</h2>
+            
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="https://drive.google.com/uc?id=1fKdwH5nNUsH9310WsXsf6Pan7bLSl03g" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/L.png"   height="258" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Rantur.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>MOTION DESING</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <iframe width="340" height="250" src="https://www.youtube.com/embed/aoYpuuh3YVI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <div class="proyecto">
+                    <iframe width="340" height="250" src="https://www.youtube.com/embed/i-d_OM77-Is" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                  <div class="proyecto">
+                    <iframe width="340" height="250" src="https://www.youtube.com/embed/DzVckL9wXKE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+            </div>
+        </section>
+                    <section id="portfolio" class="portfolio">
+                        <div class="contenido-seccion">
+                            <h2>PERSONAJES 3D</h2>
+                                    <div class="proyecto"> <iframe title="Gru_Mi_Villano_Favorito" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="342" height="300" src="https://sketchfab.com/models/ffcef713ec904c6badb6f09eac68912e/embed"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #ffffff;"> <a href="https://sketchfab.com/3d-models/gru-mi-villano-favorito-ffcef713ec904c6badb6f09eac68912e?utm_medium=embed&utm_campaign=share-popup&utm_content=ffcef713ec904c6badb6f09eac68912e" target="_blank" rel="nofollow" style="font-weight: bold; color: #007b94;"></a>  <a href="https://sketchfab.com/Brayan_Lopez?utm_medium=embed&utm_campaign=share-popup&utm_content=ffcef713ec904c6badb6f09eac68912e" target="_blank" rel="nofollow" style="font-weight: bold; color: #007b94;">  </a>  <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=ffcef713ec904c6badb6f09eac68912e" target="_blank" rel="nofollow" style="font-weight: bold; color: #007b94;"></a></p>
+                                        <div class="overlay">
+                                    </div>
+                            </div>
+                        </div>
+                    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>ANIMACIÓN 3D</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <iframe width="340" height="250" src="https://www.youtube.com/embed/pLxH9R0aKs8" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                  <div class="proyecto">
+                    <iframe width="340" height="250" src="https://www.youtube.com/embed/GVqET7L1d3c" frameborder="0" allowfullscreen></iframe>
+                </div>
+                  <div class="proyecto">
+                    <iframe width="340" height="250" src="https://www.youtube.com/embed/OoE58SvPRh4" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>RENDER - COLISEO ROMANO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Coloceo 2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div> 
+                <div class="proyecto">
+                    <img src="img/Spartano.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>  
+                <div class="proyecto">
+                    <img src="img/Vikingo.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div> 
+                <div class="proyecto">
+                    <img src="img/2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div> 
+                <div class="proyecto">
+                    <img src="img/5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div> 
+                <div class="proyecto">
+                    <img src="img/3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>RENDER - CUARTO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/Cuarto_n_1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div> 
+                <div class="proyecto">
+                    <img src="img/Cuarto_n_2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div> 
+                <div class="proyecto">
+                    <img src="img/Cuarto_n_3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Cuarto_n_4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>RENDER - Psyduck Pokemon</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/Patito2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div> 
+                <div class="proyecto">
+                    <img src="img/Patito3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div> 
+                <div class="proyecto">
+                    <img src="img/Patito4.jpg" alt="" >
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Patito5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Nicaragua 159, San Rafael Mza
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 2384 - 4343443 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: cw@example.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
