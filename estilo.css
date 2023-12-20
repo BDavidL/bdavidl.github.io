@@ -11,7 +11,7 @@ html{
 }
 /* MENU */
 .contenedor-header{
-    background: #000000;
+    background: #000000c9;
     position: fixed;
     width: 100%;
     top: 0;
@@ -24,7 +24,7 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 3px 20px;
 }
 .contenedor-header header .logo a{
     font-size: 36px;
@@ -33,7 +33,7 @@ html{
 }
 
 .logo img {
-    width: 50px;
+    width: 45px;
     height: auto;
 }
 
@@ -64,7 +64,7 @@ html{
 /* SECCION I N I C I O */
 .inicio{
     background: linear-gradient(to top, rgba(30, 35, 38, 0), rgba(30, 35, 38, 0)),
-    url(img/trueno.gif);
+    url(img/trueno4.gif);
     background-size: cover;
     height: 100vh;
     color: #fff;    
@@ -73,7 +73,7 @@ html{
 }
 .inicio .contenido-banner{
     padding: 20px;
-    background-color: #000000;
+    background-color: #000000da;
     max-width: 350px;
     margin: auto;
     text-align: center;
@@ -81,21 +81,42 @@ html{
 }
 .inicio .contenido-banner img{
     margin-top: 40px;
-    border: 10px solid #333333;
+    border: 5px solid #ffffffb5;
     display: block;
     width: 80%;
     margin: auto;
     border-radius: 100%;
 }
-.inicio .contenido-banner h1{
+.inicio .contenido-banner h1 {
     margin-top: 40px;
     font-size: 42px;
     font-family: 'Righteous';
 }
-.inicio .contenido-banner h2{
-    font-size: 15px;
+
+.inicio .contenido-banner h2 {
     font-weight: normal;
+
 }
+
+.inicio .contenido-banner h2:nth-of-type(1) {
+    font-size: 20px; /* Tamaño para el primer h2 */
+    font-weight: 580;
+}
+
+.inicio .contenido-banner h2:nth-of-type(2) {
+    font-size: 14px; /* Tamaño para el segundo h2 */
+    font-weight: 400;
+}
+
+.inicio .contenido-banner h2:nth-of-type(3) {
+    font-size: 12px; /* Tamaño para el tercer h2 */
+    font-weight: 400;
+}
+
+.inicio .contenido-banner h3 {
+    margin-top: 10px; /* Añadido espacio antes del h3 */
+}
+
 .inicio .contenido-banner .redes a{
     color: #fff;
     display: inline-block;
@@ -133,7 +154,6 @@ html{
     line-height: 22px;
     margin-bottom: 20px;
     text-align: justify;
-
 }
 .sobremi .contenido-seccion p span{
     color: #007b94;
@@ -297,7 +317,7 @@ h1, h2 {
 }
 @keyframes javascript {
     0%{width: 0%;}
-    100%{width: 75%;}
+    100%{width: 85%;}
 }
 
 .skills .skill .htmlcss{
@@ -306,7 +326,7 @@ h1, h2 {
 }
 @keyframes htmlcss {
     0%{width: 0%;}
-    100%{width: 89%;}
+    100%{width: 90%;}
 }
 
 .skills .skill .photoshop{
@@ -324,7 +344,7 @@ h1, h2 {
 }
 @keyframes wordpress {
     0%{width: 0%;}
-    100%{width: 81%;}
+    100%{width: 85%;}
 }
 
 .skills .skill .drupal{
@@ -333,7 +353,7 @@ h1, h2 {
 }
 @keyframes drupal {
     0%{width: 0%;}
-    100%{width: 55%;}
+    100%{width: 80%;}
 }
 
 .skills .skill .comunicacion{
@@ -342,7 +362,7 @@ h1, h2 {
 }
 @keyframes comunicacion {
     0%{width: 0%;}
-    100%{width: 80%;}
+    100%{width: 85%;}
 }
 
 .skills .skill .trabajo{
@@ -351,7 +371,7 @@ h1, h2 {
 }
 @keyframes trabajo {
     0%{width: 0%;}
-    100%{width: 70%;}
+    100%{width: 90%;}
 }
 
 .skills .skill .creatividad{
@@ -360,7 +380,7 @@ h1, h2 {
 }
 @keyframes creatividad {
     0%{width: 0%;}
-    100%{width: 99%;}
+    100%{width: 95%;}
 }
 
 .skills .skill .dedicacion{
@@ -369,7 +389,7 @@ h1, h2 {
 }
 @keyframes dedicacion {
     0%{width: 0%;}
-    100%{width: 65%;}
+    100%{width: 90%;}
 }
 
 .skills .skill .proyect{
@@ -378,7 +398,7 @@ h1, h2 {
 }
 @keyframes proyect {
     0%{width: 0%;}
-    100%{width: 94%;}
+    100%{width: 95%;}
 }
 /* SECCION CURRICULUM */
 .curriculum{
@@ -675,7 +695,7 @@ h1, h2 {
   
   #outer-board {
     width: 365px;
-    margin: auto;
+    margin:  auto;
   }
   
   #board {
@@ -752,6 +772,8 @@ h1, h2 {
     height: 8px;
     margin: 3px;
   }
+
+  
 
 /* SECCION CONTACTO */
 .contacto{
