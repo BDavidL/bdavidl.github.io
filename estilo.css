@@ -71,7 +71,7 @@ html{
     background: #000000c9;
     position: fixed;
     width: 100%;
-    top: 22px; /* Ajusta esta distancia según el tamaño del spot-publicitario */
+    top: 21px; /* Ajusta esta distancia según el tamaño del spot-publicitario */
     left: 0;
     z-index: 99;
     transition: top 0.3s; /* Agrega una transición suave */
@@ -219,7 +219,7 @@ html{
 
     .inicio .contenido-banner {
         max-width: 370px; /* Ancho reducido */
-        margin-top: 50%; /* Reducido el margen superior */
+        margin-top: 45%; /* Reducido el margen superior */
     }
 
   
