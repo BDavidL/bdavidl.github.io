@@ -9,22 +9,53 @@ html{
     /* me permite deslizar cuando hago clic en los links del menu */
     scroll-behavior: smooth;
 }
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    animation: whatsapp-animation 0.4s infinite alternate;
+}
+
+.whatsapp-button i {
+    line-height: 60px;
+}
+
+@keyframes whatsapp-animation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
 .spot-publicitario {
-    background-color: #000000f1; /* Color de fondo del spot publicitario */
-    padding: 1px ; /* Ajusta el padding según sea necesario */
+    background-color: #000000; /* Color de fondo del spot publicitario */
+    padding: 1px; /* Ajusta el padding según sea necesario */
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 100; /* Asegura que esté por encima del contenedor-header */
     overflow: hidden; /* Para ocultar el texto que se desborda */
-    color: #ffffff; 
-    font-size: 18px; /* Tamaño del texto un poco más grande */
-    font-family: 'Righteous';
+    color: #ffffff;
+    font-size: 17px; /* Tamaño del texto un poco más grande */
+    font-family: 'Roboto', 'Arial Narrow', Arial, sans-serif; /* Fuentes alternativas */
+    font-weight: 600; /* Peso de la fuente semibold */
+    letter-spacing: 0px; /* Espaciado entre letras */
 }
 
 .spot-publicitario p {
-    animation: animacionTexto 35s linear infinite; /* Animación del texto */
+    animation: animacionTexto 24s linear infinite; /* Animación del texto */
     white-space: nowrap; /* Evita que el texto se divida en líneas */
 }
 
@@ -40,7 +71,7 @@ html{
     background: #000000c9;
     position: fixed;
     width: 100%;
-    top: 23px; /* Ajusta esta distancia según el tamaño del spot-publicitario */
+    top: 22px; /* Ajusta esta distancia según el tamaño del spot-publicitario */
     left: 0;
     z-index: 99;
     transition: top 0.3s; /* Agrega una transición suave */
@@ -52,12 +83,12 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 10px; /* Ajusta el padding según sea necesario */
+    padding: 10px; /* Ajusta el padding según sea necesario */
     position: relative; /* Asegura que los elementos dentro del header respeten el z-index */
 }
 
-.contenedor-header header .logo a{
-    font-size: 40px;
+.contenedor-header header .logo a {
+    font-size: 24px; /* Reduce el tamaño del logo para dispositivos móviles */
     color: #007b94;
     text-decoration: none;
 }
@@ -67,30 +98,39 @@ html{
     height: auto;
 }
 
-.contenedor-header header ul{
+.contenedor-header header nav ul {
     display: flex;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
-.contenedor-header header nav ul li a{
-    font-family: 'Righteous';
-    text-align: right;
+
+.contenedor-header header nav ul li {
+    margin: 0 10px; /* Ajusta el margen entre los elementos del menú */
+}
+
+.contenedor-header header nav ul li a {
+    font-family: 'Righteous', sans-serif; /* Aplica la fuente Righteous */
     color: #fff;
-    margin: 0 15px;
-    padding: 3px;
-    transition: .5s;
     text-decoration: none;
+    padding: 8px 10px; /* Ajusta el padding para hacer los enlaces más fáciles de pulsar */
+    transition: color 0.5s; /* Añade una transición suave para el cambio de color */
 }
-.contenedor-header header nav ul li a:hover{
+
+.contenedor-header header nav ul li a:hover {
     color: #007b94;
 }
-.nav-responsive{
+
+.nav-responsive {
     background-color: #007b94;
-    color:#fff;
-    padding: 5px 10px;
+    color: #fff;
+    padding: 10px;
     border-radius: 5px;
     cursor: pointer;
     display: none;
 }
+
+
 
 
 /* SECCION I N I C I O */
@@ -103,14 +143,17 @@ html{
     display: flex;
     align-items: center;
 }
+
+
+
 .inicio .contenido-banner{
     padding: 20px;
     background-color: #000000da;
     max-width: 350px;
     margin: auto;
     text-align: center;
-    border-radius: 40px;
-    margin-top: 87px;
+    border-radius: 45px;
+    margin-top: 95px;
 }
 .inicio .contenido-banner img{
     margin-top: 90px;
@@ -121,7 +164,7 @@ html{
     border-radius: 100%;
 }
 .inicio .contenido-banner h1 {
-    margin-top: 40px;
+    margin-top: 30px;
     font-size: 42px;
     font-family: 'Righteous';
 }
@@ -161,11 +204,27 @@ html{
     line-height: 42px;
     margin: 40px 5px;
     font-size: 20px;
-    transition: .3s;
+    transition: 1s;
 }
 .inicio .contenido-banner .redes a:hover{
     background-color: #007b94;
 }
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .inicio {
+        padding: 0px; /* Reducido el padding */
+        
+    }
+
+    .inicio .contenido-banner {
+        max-width: 370px; /* Ancho reducido */
+        margin-top: 50%; /* Reducido el margen superior */
+    }
+
+  
+}
+
 .sobremi{
     background-color: #000000;
     color: #fff;
@@ -462,6 +521,7 @@ h1, h2 {
     font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
+    text-align: center;
 }
 .curriculum .fila .izquierda{
     border-right: 2px solid #000000;
@@ -809,20 +869,20 @@ h1, h2 {
   
 
 /* SECCION CONTACTO */
-.contacto{
+.contacto {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.558), rgba(0, 0, 0, 0.47)),
-    url(img/Conta.gif);
+                url(img/Conta.gif);
     color: #fff;
     padding: 50px 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.contacto .contenido-seccion{
+
+.contacto .contenido-seccion {
     max-width: 1100px;
     margin: auto;
     text-align: center;
-
 }
 
 .centrado {
@@ -830,37 +890,42 @@ h1, h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-.contacto h2{
+}
+
+.contacto h2 {
     font-size: 48px;
-    font-family: 'Righteous';
+    font-family: 'Righteous', sans-serif;
     text-align: center;
     padding: 20px 0;
 }
-.contacto .fila{
+
+.contacto .fila {
     display: flex;
 }
-.contacto .col{
+
+.contacto .col {
     width: 100%;
     padding: 10px;
     position: relative;
 }
-.contacto .col input, .contacto .col textarea{
+
+.contacto .col input,
+.contacto .col textarea {
     display: block;
     width: 100%;
-    padding: 18px;
+    padding: 12px; /* ajustado el padding */
     border: none;
     margin-bottom: 20px;
-    background-color: #000000a4;
+    background-color: rgba(0, 0, 0, 0.4); /* ajustado el color de fondo */
     color: #fff;
     font-size: 18px;
 }
-.contacto button{
+
+.contacto button {
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #fff;
-    width: fit-content;
+    width: auto; /* ajustado el ancho */
     display: block;
     margin: 20px auto;
     padding: 10px 22px;
@@ -869,7 +934,8 @@ h1, h2 {
     position: relative;
     z-index: 10;
 }
-.contacto button .overlay{
+
+.contacto button .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -877,35 +943,40 @@ h1, h2 {
     height: 100%;
     background-color: #1CB698;
     z-index: -1;
-    transition: 1s;
+    transition: width 0.3s; /* ajustado el tiempo de transición */
 }
-.contacto button:hover .overlay{
+
+.contacto button:hover .overlay {
     width: 100%;
 }
-.contacto .col img{
+
+.contacto .col img {
     width: 100%;
 }
-.contacto .col .info{
+
+.contacto .col .info {
     position: absolute;
-    top: 40%;
-    background-color: #000000;
+    top: 50%; /* ajustado el posicionamiento vertical */
+    background-color: rgba(0, 0, 0, 0.7); /* ajustado el color de fondo */
     padding: 20px;
     max-width: 350px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.contacto .col .info ul{
+
+.contacto .col .info ul {
     list-style: none;
 }
-.contacto .col .info ul li{
+
+.contacto .col .info ul li {
     margin-bottom: 20px;
 }
-.contacto .col .info ul li i{
+
+.contacto .col .info ul li i {
     color: #1CB698;
     display: inline-block;
     margin-right: 20px;
 }
-
 
 footer{
     background-color: #000000;
@@ -927,7 +998,7 @@ footer .redes a{
     width: 42px;
     height: 42px;
     line-height: 42px;
-    margin: 40px 5px;
+    margin: 10px 5px;
     font-size: 20px;
     transition: .3s;
 }
